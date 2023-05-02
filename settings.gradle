@@ -1,0 +1,2 @@
+rootProject.name = 'dlx'
+include 'dlx-core'

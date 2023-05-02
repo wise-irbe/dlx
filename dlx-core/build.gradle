@@ -1,0 +1,27 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClassName = 'com.radu.dlx.SudokuCommand'
+}
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+run {
+    standardInput = System.in
+}
+
+dependencies {
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.4.1'
+    testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.4.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+}
